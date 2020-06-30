@@ -3,7 +3,7 @@
   <Base file="data/entities/base_projectile_physics.xml">
 
     <PhysicsImageShapeComponent 
-      image_file="mods/explosive_pigs/files/pig.png"
+      image_file="mods/Noita-Explosive-Pigs/files/actions/pig.png"
       material="meat" >
     </PhysicsImageShapeComponent>
   
@@ -13,12 +13,12 @@
 	  muzzle_flash_file="data/entities/particles/muzzle_flashes/muzzle_flash_launcher_large.xml"
 	  shoot_light_flash_radius="80"
 	  shoot_light_flash_r="255"
-	  shoot_light_flash_g="30"
-	  shoot_light_flash_b="30" >
+	  shoot_light_flash_g="25"
+	  shoot_light_flash_b="25" >
       <config_explosion
         never_cache="0" 
-        damage="5"
-        camera_shake="25" 
+        damage="4"
+        camera_shake="15" 
         explosion_radius="40" 
         explosion_sprite="data/particles/explosion_128.xml" 
         explosion_sprite_lifetime="0" 
@@ -49,11 +49,15 @@
 
   </Base>
 
-  <!-- fx (Currently not functional)--> 
-  	<AudioComponent
-		file="mods/explosive_pigs/files/piggy.bank"
-      	event_root="snd_mod"
-		set_latest_event_position="1" >
-	</AudioComponent>
+  <!-- fx --> 
+  <AudioComponent
+	file="mods/Noita-Explosive-Pigs/files/piggy.bank"
+    event_root="snd_mod" >
+  </AudioComponent>
+
+  <AudioComponent
+    file="data/audio/Desktop/projectiles.snd"
+    event_root="player_projectiles/bomb">
+  </AudioComponent>
 
 </Entity>
