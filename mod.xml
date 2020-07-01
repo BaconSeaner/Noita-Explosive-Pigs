@@ -1,9 +1,6 @@
 <Mod
-	name="Eplosive Pigs"
+	name="Eplosive Pigs!"
 	description="Pigs... that explode! (In a spell format)"
-	tags="spells,creatures,items,funny"
-	request_no_api_restrictions="0"
-	dont_upload_folders=".vs"
-	dont_upload_files=".gitignore, README.md"
+	request_no_api_restrictions="0" 
 > 
 </Mod>
